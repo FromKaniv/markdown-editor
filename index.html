@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Markdown Editor</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header class="topbar">
+        <button class="burger" aria-label="Menu">
+          <span class="material-icons">menu</span>
+        </button>
+        <div class="topbar-title">Markdown Editor</div>
+        <div class="topbar-buttons">
+            <button class="icon-text-button" title="Open">
+                <span class="material-icons">file_open</span>
+                <span class="btn-text">Open</span>
+            </button>
+            <div class="theme-switcher">
+                <button class="icon-text-button theme-button" title="Change Theme">
+                    <span class="material-icons theme-icon">dark_mode</span>
+                    <span class="btn-text">Theme…</span>
+                </button>
+                <div class="theme-menu">
+                    <button class="theme-option" data-theme="system">
+                        <span class="material-icons">settings</span>
+                        System
+                    </button>
+                    <button class="theme-option" data-theme="light">
+                        <span class="material-icons">light_mode</span>
+                        Light
+                    </button>
+                    <button class="theme-option" data-theme="dark">
+                        <span class="material-icons">dark_mode</span>
+                        Dark
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside class="side-menu" aria-label="Side menu">
+        <div class="side-menu-header">Markdown Editor</div>
+        <button class="side-icon-text-button" title="Open">
+            <span class="material-icons">file_open</span>
+            <span class="btn-text">Open</span>
+        </button>
+
+        <div class="side-menu-separator"></div>
+
+        <button class="side-icon-text-button side-theme-option" data-theme="system">
+            <span class="material-icons">settings</span>
+            System Theme
+        </button>
+        <button class="side-icon-text-button side-theme-option" data-theme="light">
+            <span class="material-icons">light_mode</span>
+            Light Theme
+        </button>
+        <button class="side-icon-text-button side-theme-option" data-theme="dark">
+            <span class="material-icons">dark_mode</span>
+            Dark Theme
+        </button>
+    </aside>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div class="editor">
+            <textarea placeholder="Enter your Markdown here..."></textarea>
+        </div>
+        <div class="preview"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
