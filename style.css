@@ -14,6 +14,7 @@
     --preview-border: #ccc;
     --preview-text: #222;
     --code-bg: #eee;
+    --link: #000;
     --blockquote-border: #ccc;
     --blockquote-text: #555;
     --blockquote-bg: #f9f9f9;
@@ -35,6 +36,7 @@ body.dark-theme {
     --preview-border: #555;
     --preview-text: #e0e0e0;
     --code-bg: #444;
+    --link: #fff;
     --blockquote-border: #666;
     --blockquote-text: #bbb;
     --blockquote-bg: #3a3a3a;
@@ -400,19 +402,12 @@ body {
 }
 
 a {
-    color: #007acc;
-    text-decoration: none;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-    border-bottom: 2px solid transparent;
-}
-
-a {
-    color: #ffffff;
+    color: var(--link);
     text-decoration: underline;
 }
 
 a:visited {
-    color: #ffffff;
+    color: var(--link);
     text-decoration: underline;
 }
 
