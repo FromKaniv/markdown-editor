@@ -134,3 +134,8 @@ function openFile() {
 openButtons.forEach(button => {
     button.addEventListener('click', openFile);
 });
+
+document.querySelectorAll('a').forEach(a => {
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener noreferrer');
+});

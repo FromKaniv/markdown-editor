@@ -3,8 +3,6 @@ A clean and responsive web-based Markdown editor with a live preview.
 Write your Markdown on one side and see the rendered HTML in real-time on the other.
 Supports light and dark themes, and adapts perfectly to both desktop and mobile screens.
 
-![Screenshot 2025-06-25 at 01-56-45 Markdown Editor](https://github.com/user-attachments/assets/e278ac61-33db-4279-bc16-46fe9ceffb8e)
-
 ## Third-Party Resources
 
 This project leverages the following external resources:
